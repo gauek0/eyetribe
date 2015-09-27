@@ -54,7 +54,7 @@ public class TETSimple {
         JPanel p = new JPanel();
         p.setLayout(new GridLayout(dim, dim));
         BufferedImage buttonIcon = null;
-        final BufferedImage buttonIconHit = null;
+        BufferedImage buttonIconHit = null;
         JPanel p2 = new JPanel();
    
 
@@ -68,6 +68,7 @@ public class TETSimple {
         } catch (IOException ex) {
             Logger.getLogger(TETSimple.class.getName()).log(Level.SEVERE, null, ex);
         }
+        final ImageIcon ii1 = new ImageIcon(buttonIconHit);
 
         for (int r = 0; r < dim; r++) {
             for (int c = 0; c < dim; c++) {
@@ -110,7 +111,7 @@ public class TETSimple {
                         sleep(100);
                         if (pos == localPos ){
                             //i = 100;
-                            MatImages[c][r].setIcon(new ImageIcon(buttonIconHit));
+                            MatImages[c][r].setIcon(ii1);
                             
                         }
                     } catch (InterruptedException ex) {
