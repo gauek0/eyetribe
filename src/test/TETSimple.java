@@ -12,7 +12,6 @@ import com.theeyetribe.client.IGazeListener;
 import com.theeyetribe.client.data.GazeData;
 import java.awt.Button;
 import java.awt.GridLayout;
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -23,6 +22,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
 
 /**
  *
@@ -54,9 +54,12 @@ public class TETSimple {
         JPanel p = new JPanel();
         p.setLayout(new GridLayout(dim, dim));
         BufferedImage buttonIcon = null;
-        String ImageName = "/Users/YafimZelm/NetBeansProjects/eyetribe1/src/resImg/crimenal.jpg";
+
+            String ImageName = "/resImg/crimenal.jpg";
+       
+     
         try {
-            buttonIcon = ImageIO.read(new File(ImageName));
+            buttonIcon = ImageIO.read(TETSimple.class.getResourceAsStream(ImageName));
         } catch (IOException ex) {
             Logger.getLogger(TETSimple.class.getName()).log(Level.SEVERE, null, ex);
         }
