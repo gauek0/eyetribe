@@ -54,12 +54,17 @@ public class TETSimple {
         JPanel p = new JPanel();
         p.setLayout(new GridLayout(dim, dim));
         BufferedImage buttonIcon = null;
+        final BufferedImage buttonIconHit = null;
+        JPanel p2 = new JPanel();
+   
 
             String ImageName = "/resImg/crimenal.jpg";
+            String ImageNameHit ="/resImg/crimenalBlood";
        
      
         try {
             buttonIcon = ImageIO.read(TETSimple.class.getResourceAsStream(ImageName));
+            buttonIconHit = ImageIO.read(TETSimple.class.getResourceAsStream(ImageNameHit));
         } catch (IOException ex) {
             Logger.getLogger(TETSimple.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -104,7 +109,9 @@ public class TETSimple {
                     try {
                         sleep(100);
                         if (pos == localPos ){
-                            i = 100;
+                            //i = 100;
+                            MatImages[c][r].setIcon(new ImageIcon(buttonIconHit));
+                            
                         }
                     } catch (InterruptedException ex) {
                         Logger.getLogger(TETSimple.class.getName()).log(Level.SEVERE, null, ex);
