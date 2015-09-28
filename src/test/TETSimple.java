@@ -5,7 +5,7 @@
  */
 package test;
 
-import static com.sun.glass.ui.Cursor.setVisible;
+//import static com.sun.glass.ui.Cursor.setVisible;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;

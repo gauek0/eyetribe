@@ -70,10 +70,10 @@ public class Game {
         JPanel p2 = new JPanel();
    
 //C:\Users\dell\Documents\NetBeansProjects\eyetribe\src\resImg\crimenal.jpg
-            String ImageName = "src\\resImg\\crimenal.jpg";
-           String ImageNameHit ="src\\resImg\\crimenalBlood.png";
-            String ImageNameHost = "src\\resImg\\hostage2.jpg";
-            String ImageNameHostHit = "src\\resImg\\hostage2Hit.jpg";
+            String ImageName = "src/resImg/crimenal.jpg";
+           String ImageNameHit ="src/resImg/crimenalBlood.png";
+            String ImageNameHost = "src/resImg/hostage2.jpg";
+            String ImageNameHostHit = "src/resImg/hostage2Hit.jpg";
 
            // String ImageName = "/resImg/crimenal.jpg";
          //   String ImageNameHit ="/resImg/crimenalBlood";
